@@ -99,7 +99,12 @@ impl Kernel {
             task.size, 
             EncryptionMode::PostQuantum
         ).await;
-        
+        // Микроядро AURORA - базовый IPC с AI-оптимизацией
+struct AuroraMicrokernel {
+    ai_scheduler: NeuralScheduler,
+    memory_manager: SecureMemory,
+    ipc_bus: EventBus,
+}
         // Запуск в изолированной песочнице
         self.ipc_bus.spawn_sandboxed(task, mem_region).await;
     }
