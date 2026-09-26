@@ -72,9 +72,7 @@ AI-ядро анализирует паттерны поведения и пре
 Файлы не привязаны к диску — они распределены по доверенной сети с репликацией и шифрованием на уровне блоков.
 
 Пример кода модуля ядра (псевдокод)
-
-**rust**
-
+rust
 // Микроядро AURORA - базовый IPC с AI-оптимизацией
 struct AuroraMicrokernel {
     ai_scheduler: NeuralScheduler,
@@ -82,13 +80,6 @@ struct AuroraMicrokernel {
     ipc_bus: EventBus,
 }
 
-
-// Микроядро AURORA - базовый IPC с AI-оптимизацией
-struct AuroraMicrokernel {
-    ai_scheduler: NeuralScheduler,
-    memory_manager: SecureMemory,
-    ipc_bus: EventBus,
-}
 impl Kernel {
     async fn schedule_process(&mut self, task: Task) {
         // AI предсказывает оптимальное время выполнения
@@ -99,12 +90,7 @@ impl Kernel {
             task.size, 
             EncryptionMode::PostQuantum
         ).await;
-        // Микроядро AURORA - базовый IPC с AI-оптимизацией
-struct AuroraMicrokernel {
-    ai_scheduler: NeuralScheduler,
-    memory_manager: SecureMemory,
-    ipc_bus: EventBus,
-}
+        
         // Запуск в изолированной песочнице
         self.ipc_bus.spawn_sandboxed(task, mem_region).await;
     }
