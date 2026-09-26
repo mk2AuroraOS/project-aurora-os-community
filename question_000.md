@@ -73,7 +73,8 @@ AI-ядро анализирует паттерны поведения и пре
 
 Пример кода модуля ядра (псевдокод)
 rust
-`// Микроядро AURORA - базовый IPC с AI-оптимизацией
+`kod
+// Микроядро AURORA - базовый IPC с AI-оптимизацией
 struct AuroraMicrokernel {
     ai_scheduler: NeuralScheduler,
     memory_manager: SecureMemory,
