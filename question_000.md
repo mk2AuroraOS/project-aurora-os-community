@@ -73,8 +73,7 @@ AI-ядро анализирует паттерны поведения и пре
 
 Пример кода модуля ядра (псевдокод)
 rust
-
-
+```
 struct AuroraMicrokernel {
     ai_scheduler: NeuralScheduler,
     memory_manager: SecureMemory,
@@ -97,7 +96,7 @@ impl Kernel {
         self.ipc_bus.spawn_sandboxed(task, mem_region).await;
     }
 }
-
+```
 Сферы применения
 Персональные устройства: смартфоны, ноутбуки, AR-очки
 IoT и промышленность: умные дома, фабрики, автономные системы
