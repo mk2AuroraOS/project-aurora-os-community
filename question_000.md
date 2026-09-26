@@ -75,12 +75,13 @@ AI-ядро анализирует паттерны поведения и пре
 
 rust
 
-// Микроядро PROJECT AURORA - базовый IPC с AI-оптимизацией
+// Микроядро AURORA - базовый IPC с AI-оптимизацией
 struct AuroraMicrokernel {
     ai_scheduler: NeuralScheduler,
     memory_manager: SecureMemory,
     ipc_bus: EventBus,
 }
+
 impl Kernel {
     async fn schedule_process(&mut self, task: Task) {
         // AI предсказывает оптимальное время выполнения
