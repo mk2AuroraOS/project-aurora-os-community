@@ -80,7 +80,7 @@ struct AuroraMicrokernel {
     memory_manager: SecureMemory,
     ipc_bus: EventBus,
 }
-// Микроядро AURORA - базовый IPC с AI-оптимизацией
+// Микроядро PROJECT AURORA - базовый IPC с AI-оптимизацией
 
 impl Kernel {
     async fn schedule_process(&mut self, task: Task) {
